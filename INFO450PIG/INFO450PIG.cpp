@@ -7,7 +7,7 @@
 using namespace std;
 
 char enWord;
-char letter;
+char firstLetter;
 char words[50];
 char translate[50];
 
@@ -20,7 +20,9 @@ int main()
 	gets_s(words);
 	cout << "You entered " << words << endl; 
 	
-	if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+	bool vowel;
+
+	if (firstLetter == 'a' || firstLetter == 'e' || firstLetter == 'i' || firstLetter == 'o' || firstLetter == 'u')
 	{
 		cout << "That would be " << enWord << "ay!" << endl; 
 	}
