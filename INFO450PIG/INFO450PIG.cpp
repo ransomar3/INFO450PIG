@@ -3,8 +3,11 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include <string>
 using namespace std;
-int enWord;
+
+char enWord;
+char letter;
 char words[50];
 char translate[50];
 
@@ -14,8 +17,17 @@ int main()
 {
 	cout << "This is an English to Pig Latin translator." << endl;
 	cout << "Please enter the word you would like to translate here: " << endl;
-	cin >> enWord;
+	gets_s(words);
+	cout << "You entered " << words << endl; 
+	
+	if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+	{
+		cout << "That would be " << enWord << "ay!" << endl; 
+	}
+	else
+	{
 
+	}
     return 0;
 }
 
