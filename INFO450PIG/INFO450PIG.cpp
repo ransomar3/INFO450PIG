@@ -17,6 +17,7 @@ int main()
 	return 0;
 }
 
+// Switch case to detect vowel inputs for the first letter of each word.
 bool isAVowel(char ch)
 {
 	switch (ch)
@@ -72,6 +73,7 @@ string translateToPigLatin(string word)
 			word = word.substr(1, len) + "ay";
 		else
 			word = word + "ay";
+		// Subtracts first letter of word from input, then puts it at the end of it, then adds "ay" to it. 
 	}
 	return word;
 }
